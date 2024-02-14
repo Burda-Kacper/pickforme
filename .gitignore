@@ -19,3 +19,6 @@
 ###< symfony/phpunit-bridge ###
 
 .idea
+/migrations/*
+!/migrations/.gitkeep
+/node_modules/

@@ -1,0 +1,14 @@
+.homepage-header {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 49%;
+  }
+}

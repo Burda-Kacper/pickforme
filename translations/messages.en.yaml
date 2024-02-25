@@ -1,6 +1,0 @@
-navigation:
-    random: 'Random Pick'
-    battle: 'Battle Royale'
-    search: 'Search a player'
-homepage:
-    header: 'Welcome to pickforme!'

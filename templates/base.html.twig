@@ -9,26 +9,6 @@
     <link rel="stylesheet" href="{{ asset("css/main.css") }}"/>
 </head>
 <body>
-<div class="site-container">
-    <nav class="site-navigation">
-        <a href="{{ path('homepage') }}" class="site-logo">pickforme</a>
-        <a class="site-navigation-link active" href="{{ path('random') }}"><i class="icon fa-solid fa-shuffle"></i>
-            <span>{{ 'navigation.random'|trans }}</span>
-        </a>
-        <a class="site-navigation-link" href="#">
-            <i class="icon fa-solid fa-bolt-lightning"></i>
-            <span>{{ 'navigation.battle'|trans }}</span>
-        </a>
-        <a class="site-navigation-link" href="#">
-            <i class="icon fa-solid fa-magnifying-glass"></i>
-            <span>{{ 'navigation.search'|trans }}</span>
-        </a>
-    </nav>
-    <main class="site-content">
-        {% block content %}
-        {% endblock %}
-    </main>
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 {% block javascripts %}
 {% endblock %}

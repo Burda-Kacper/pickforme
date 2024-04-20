@@ -9,6 +9,43 @@
     <link rel="stylesheet" href="{{ asset("css/main.css") }}"/>
 </head>
 <body>
+<div class="site-container">
+    <div class="site-navigation-placeholder"></div>
+    <nav class="site-navigation">
+        <div>
+            <a class="site-logo" href="{{ path('homepage') }}">pickforme</a>
+            <a class="site-navigation-link" href="{{ path('random') }}">
+                <i class="fa-solid fa-shuffle"></i>
+                {{ 'navigation.random'|trans }}
+            </a>
+            <a class="site-navigation-link" href="#">
+                <i class="fa-solid fa-bolt"></i>
+                {{ 'navigation.battle'|trans }}
+            </a>
+            <a class="site-navigation-link" href="#">
+                <i class="fa-solid fa-shuffle"></i>
+                {{ 'navigation.search'|trans }}
+            </a>
+        </div>
+        <div>
+
+        </div>
+    </nav>
+    <div class="site-data">
+        <nav class="site-sub-navigation">
+            <div>xd</div>
+            <div>
+                <div class="site-user-icon-container">
+                    <i class="site-user-icon fa-solid fa-user"></i>
+                </div>
+            </div>
+        </nav>
+        <main class="site-content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 {% block javascripts %}
 {% endblock %}
